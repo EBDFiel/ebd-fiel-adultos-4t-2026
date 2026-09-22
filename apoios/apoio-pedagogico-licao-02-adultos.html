@@ -6,7 +6,19 @@
 <style>
 :root{--navy:#12263a;--navy2:#203f59;--gold:#c89b43;--gold2:#a97b28;--cream:#f7f1e7;--paper:#fff;--ink:#24333e;--muted:#61707b;--line:#ded4c1;--soft:#fbf9f4}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#ebe6dc;color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.58}.page{max-width:980px;margin:22px auto;background:#fff;box-shadow:0 14px 38px rgba(18,38,58,.12);padding:14px 16px 24px}.top-logo{display:block;width:100%;height:auto;margin:0 0 10px}
-.hero{position:relative;overflow:hidden;border:1px solid #cdbd9c;background:#222;aspect-ratio:16/7;margin-bottom:14px}.hero img{width:100%;height:100%;object-fit:cover;display:block}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.03) 45%,rgba(0,0,0,.78) 100%)}.ribbon{position:absolute;z-index:3;left:22px;top:0;width:112px;height:228px;background:linear-gradient(90deg,#8a693d 0%,#a8824d 48%,#8b693d 100%);color:#fff;text-align:center;padding:9px 7px 18px;clip-path:polygon(0 0,100% 0,100% 82%,50% 100%,0 82%);box-shadow:0 2px 0 rgba(255,255,255,.18) inset,0 0 0 1px rgba(77,53,24,.55) inset}.ribbon .date{display:block;width:100%;white-space:nowrap;font-size:12px;font-weight:900;letter-spacing:.03em;line-height:1.15;text-transform:uppercase;color:#fff}.ribbon .dots{display:block;width:100%;height:11px;margin:7px auto 8px;background:radial-gradient(circle,#fff 2.5px,transparent 2.8px) center / 12px 9px repeat-x;border:0}.ribbon .lab{display:block;font-size:20px;font-weight:900;line-height:1;letter-spacing:.02em;color:#fff;-webkit-text-stroke:2px #111;paint-order:stroke fill;text-shadow:none;margin-top:2px}.ribbon .num{display:block;margin-top:2px;font-size:82px;font-weight:900;line-height:.92;letter-spacing:-.05em;color:#fff;font-family:Arial,Helvetica,sans-serif;-webkit-text-stroke:3.5px #111;paint-order:stroke fill;text-shadow:none}.hero-title{position:absolute;z-index:3;left:34px;right:30px;bottom:22px;color:#fff;font-family:Georgia,serif;font-size:clamp(25px,4vw,42px);line-height:1.05;text-shadow:0 2px 6px rgba(0,0,0,.95);padding-left:120px}
+.hero{position:relative;overflow:hidden;border-radius:23px 23px 0 0;background:#12263a;aspect-ratio:1672/941;margin-bottom:14px;box-shadow:0 14px 38px rgba(18,38,58,.10)}
+.hero img{width:100%;height:100%;object-fit:cover;display:block}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,20,31,0) 36%,rgba(7,20,31,.18) 60%,rgba(7,20,31,.88) 100%)}
+.hero .corner-brand{position:absolute;z-index:4;top:0;right:0;width:clamp(165px,24%,300px);height:auto;pointer-events:none;user-select:none}
+.ribbon{position:absolute;z-index:4;top:0;left:clamp(16px,2.2vw,28px);width:112px;height:228px;display:flex;flex-direction:column;align-items:center;color:#fff;background:linear-gradient(90deg,#8a693d 0%,#a8824d 48%,#8b693d 100%);clip-path:polygon(0 0,100% 0,100% 82%,50% 100%,0 82%);padding:9px 7px 18px;box-sizing:border-box;text-align:center;font-family:Arial,Helvetica,sans-serif;box-shadow:0 2px 0 rgba(255,255,255,.18) inset,0 0 0 1px rgba(77,53,24,.55) inset}
+.ribbon .date{display:block;width:100%;white-space:nowrap;font-size:12px;font-weight:900;letter-spacing:.03em;line-height:1.15;text-transform:uppercase;color:#fff}
+.ribbon .dots{display:block;width:100%;height:11px;margin:7px auto 8px;background:radial-gradient(circle,#fff 2.5px,transparent 2.8px) center / 12px 9px repeat-x;border:0}
+.ribbon .lab{display:block;font-size:20px;font-weight:900;line-height:1;letter-spacing:.02em;color:#fff;-webkit-text-stroke:2px #111;paint-order:stroke fill;text-shadow:none;margin-top:2px}
+.ribbon .num{display:block;margin-top:2px;font-size:82px;font-weight:900;line-height:.92;letter-spacing:-.05em;color:#fff;font-family:Arial,Helvetica,sans-serif;-webkit-text-stroke:3.5px #111;paint-order:stroke fill;text-shadow:none}
+.hero-title{position:absolute;z-index:3;left:34px;right:30px;bottom:22px;color:#fff;padding-left:0;font-family:Arial,Helvetica,sans-serif;font-size:clamp(2.05rem,4vw,3.8rem);font-weight:900;line-height:1.12;letter-spacing:.01em;text-shadow:0 2px 3px rgba(0,0,0,.95),0 0 1px rgba(0,0,0,.9),2px 0 0 rgba(0,0,0,.9),-2px 0 0 rgba(0,0,0,.9),0 2px 0 rgba(0,0,0,.9),0 -2px 0 rgba(0,0,0,.9);max-width:min(90%,980px)}
+@media(max-width:860px){.hero .corner-brand{width:clamp(130px,25%,220px)}.hero-title{font-size:clamp(1.5rem,5vw,2.4rem);max-width:92%}}
+@media(max-width:620px){.hero .corner-brand{width:clamp(108px,30%,170px)}.ribbon{width:92px;height:188px;left:12px;padding:8px 6px 14px}.ribbon .date{font-size:10px}.ribbon .dots{height:9px;margin:7px auto 8px;background:radial-gradient(circle,#fff 2.5px,transparent 2.8px) center / 12px 9px repeat-x}.ribbon .lab{font-size:17px;-webkit-text-stroke:1.5px #111}.ribbon .num{font-size:64px;-webkit-text-stroke:3px #111}.hero-title{left:18px;right:18px;bottom:12px;font-size:clamp(1.28rem,6.6vw,1.95rem);line-height:1.11;max-width:100%}}
+
 .title-line{font-family:Georgia,serif;color:var(--navy);font-size:26px;line-height:1.2;border-bottom:2px solid var(--gold);padding:3px 0 8px;margin:8px 0 12px}.actions{display:flex;justify-content:flex-end;margin:8px 0 12px}.actions button{border:0;background:var(--navy);color:#fff;border-radius:999px;padding:10px 15px;font-weight:800;cursor:pointer}
 .info-card{border:1px solid var(--line);border-radius:10px;background:var(--soft);padding:10px 12px;margin:8px 0;break-inside:avoid}.info-card h3{margin:0 0 4px;color:var(--navy);font-size:14px;letter-spacing:.06em}.info-card p,.info-card ul,.info-card ol{margin:0}.info-card ul,.info-card ol{padding-left:22px}.reading-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.reading-grid div{border:1px solid #e4dccb;border-radius:8px;padding:6px 8px;background:#fff}.reading-grid strong{display:block;color:var(--gold2);font-size:11px;text-transform:uppercase}.reading-grid span{font-size:13px}
 .analysis{border:1px solid #cbd7df;border-radius:10px;background:#f7fafc;padding:13px 14px;margin:16px 0}.analysis h2{font-family:Georgia,serif;color:var(--navy);margin:0 0 8px;font-size:20px}.analysis p{margin:.45em 0;text-align:justify}.ped-section{margin:15px 0}.ped-section p{margin:.48em 0;text-align:justify}.section-title,.intro-title{font-family:Georgia,serif;color:var(--navy);font-size:22px;margin:16px 0 7px;padding:6px 10px;border-left:4px solid var(--gold);background:linear-gradient(90deg,#f6f1e7,#fff);border-radius:0 8px 8px 0}.sub-title{font-family:Georgia,serif;color:#263e50;font-size:18px;margin:15px 0 5px;padding-top:7px;border-top:1px solid #e3dbc9}.application{border:1px solid #dcc592;border-left:4px solid var(--gold);border-radius:8px;background:#fff9eb;padding:10px 12px;margin:9px 0 12px;color:#6b5426}.application strong{color:#8a641d;font-size:12px;letter-spacing:.04em}.taught{border-top:2px solid #d8cab0;border-bottom:2px solid #d8cab0;padding:9px 2px;margin:14px 0}.taught strong{color:var(--navy);font-family:Georgia,serif;font-size:16px}.taught p{margin:4px 0 0}footer{border-top:2px solid var(--gold);margin-top:20px;padding-top:10px;text-align:center;color:#687680;font-size:12px}
@@ -18,9 +30,67 @@
 .back-lesson-link:hover{background:#f7ecd4;text-decoration:underline}
 .back-lesson-link:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 @media print{.back-lesson-link{display:none!important}}
+</style>
+<style id="ebd-apoios-impressao-a4-corrigida">
+/* Resguarda a arte da capa quando a impressão do navegador desativa fundos. */
+@media print {
+  @page { size: A4 portrait; margin: 7mm; }
+  html, body, .page, .page * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  body { font-size: 9.25pt; line-height: 1.32; }
+  .page { padding:0; margin:0; max-width:none; box-shadow:none; }
+  .top-logo { display:block; width:100%; max-width:100%; height:auto; margin:0 0 2.1mm; }
+  .hero { height:51mm; aspect-ratio:auto; margin:0 0 2.2mm; border:0; border-radius:0; box-shadow:none; break-after:avoid-page; }
+  .hero > img:not(.corner-brand) { display:block!important; width:100%!important; height:100%!important; object-fit:cover!important; }
+  .hero > img.corner-brand { display:block!important; position:absolute!important; z-index:4!important; top:0!important; right:0!important; width:41mm!important; height:auto!important; object-fit:contain!important; }
+  .hero:after { display:block; background:linear-gradient(180deg,transparent 35%,rgba(7,20,31,.18) 56%,rgba(7,20,31,.88) 100%); }
+  .ribbon { left:4mm; top:0; width:23mm; height:39mm; min-height:0; padding:2mm 1.2mm 5mm; }
+  .ribbon .date { font-size:7pt; }
+  .ribbon .dots { display:block; width:100%; height:2mm; margin:1.5mm auto 1.5mm; border:0; background:radial-gradient(circle,#fff .58mm,transparent .68mm) center/2.7mm 2mm repeat-x; }
+  .ribbon .lab { font-size:10.5pt; -webkit-text-stroke:.5pt #111; }
+  .ribbon .num { font-size:29pt; -webkit-text-stroke:1pt #111; margin-top:0; }
+  .hero-title { left:5mm; right:5mm; bottom:3.2mm; padding-left:0; max-width:none; font-size:17pt; line-height:1.1; }
+  .title-line { font-size:13pt; padding:1mm 0; margin:1.3mm 0 1.7mm; }
+  .info-card { padding:1.6mm 2.2mm; margin:1.2mm 0; border-radius:1.5mm; font-size:8.4pt; }
+  .info-card h3 { font-size:8.4pt; margin-bottom:.6mm; }
+  .reading-grid { gap:.8mm; }
+  .reading-grid div { padding:1mm 1.5mm; }
+  .reading-grid strong { font-size:6.6pt; }
+  .reading-grid span { font-size:7.9pt; }
+  .analysis { padding:2mm 2.5mm; margin:2mm 0; }
+  .analysis h2 { font-size:11.3pt; margin-bottom:1mm; }
+  .analysis p, .ped-section p { margin:1.0mm 0; text-align:justify; orphans:2; widows:2; }
+  .ped-section { margin:2mm 0; }
+  .section-title, .intro-title { font-size:11.6pt; margin:2mm 0 1mm; padding:1mm 1.8mm; break-after:avoid-page; }
+  .sub-title { font-size:10.1pt; margin:2mm 0 .7mm; padding-top:1mm; break-after:avoid-page; }
+  .application { padding:1.6mm 2.1mm; margin:1.5mm 0 1.8mm; break-inside:avoid-page; }
+  .taught { padding:1.3mm 0; margin:1.8mm 0; break-inside:avoid-page; }
+  footer { margin-top:2mm; padding-top:1.6mm; font-size:7.3pt; }
+}
+</style>
+<style id="ebd-apoios-impressao-curta">
+@media print {
+ @page { size:A4 portrait; margin:6mm; }
+ body { font-size:9pt; line-height:1.24; }
+ .hero { height:43mm; }
+ .top-logo { margin-bottom:1.6mm; }
+ .hero-title { font-size:16pt; }
+ .title-line {font-size:12.5pt; margin:1mm 0 1.2mm;}
+ .info-card {padding:1.3mm 1.9mm;margin:.95mm 0;font-size:8.2pt;}
+ .analysis {padding:1.7mm 2.2mm;margin:1.5mm 0;}
+ .analysis p,.ped-section p {margin:.8mm 0;}
+ .ped-section {margin:1.5mm 0;}
+ .section-title,.intro-title {font-size:11.2pt;margin:1.5mm 0 .8mm;padding:.8mm 1.5mm;}
+ .sub-title {font-size:9.8pt;margin:1.5mm 0 .6mm;padding-top:.7mm;}
+ .application {padding:1.3mm 1.8mm;margin:1.1mm 0 1.4mm;}
+ .taught {padding:1mm 0;margin:1.3mm 0;}
+ footer {margin-top:1.5mm;padding-top:1mm;}
+}
 </style></head><body><main class="page">
 <img alt="EBD Fiel — Classe Adultos — Apoio Pedagógico" class="top-logo" src="../assets/logo-apoio-pedagogico-adultos.png"/>
-<section class="hero"><img alt="Capa da Lição 02: Enoque: o exemplo para os nossos dias" src="../assets/capas/licao_02.webp"/><div class="ribbon"><span class="date">11 OUT / 2026</span><span class="dots"></span><span class="lab">LIÇÃO</span><strong class="num">2</strong></div><div class="hero-title">Enoque: o exemplo para os nossos dias</div></section>
+<section class="hero"><img alt="Capa da Lição 02: Enoque: o exemplo para os nossos dias" src="../assets/capas/licao_02.webp"/><img alt="" aria-hidden="true" class="corner-brand" src="../assets/canto-logo-ebdfiel-modelo.png"/><div class="ribbon"><span class="date">11 OUT / 2026</span><span class="dots"></span><span class="lab">LIÇÃO</span><strong class="num">2</strong></div><div class="hero-title">Enoque: o exemplo para os nossos dias</div></section>
 <h1 class="title-line">Lição 02: Enoque: o exemplo para os nossos dias</h1>
 <div class="actions"><a aria-label="Voltar à Lição 2 da revista" class="back-lesson-link" href="../index.html#licao2">← Voltar à Lição 2</a><button onclick="window.print()">Imprimir / Salvar em PDF</button></div>
 <section class="info-card"><h3>TEXTO ÁUREO</h3><div><p>"Pela fé, Enoque foi trasladado para não ver a morte, e não foi achado, porque Deus o trasladara, visto como antes da sua trasladação alcançou testemunho de que agradara a Deus". Hebreus 11.5</p></div></section><section class="info-card"><h3>VERDADE APLICADA</h3><div><p>Pela ação do Espírito Santo, somos capacitados a conhecer e praticar a vontade de Deus, vivendo de modo que O agrade.</p></div></section><section class="info-card"><h3>OBJETIVOS DA LIÇÃO</h3><div><ul><li>Compreender o significado de andar com Deus.</li><li>Compreender como a trasladação de Enoque ilustra a esperança do Arrebatamento da Igreja.</li><li>Identificar, em Enoque, características que agradam a Deus.</li></ul></div></section><section class="info-card"><h3>TEXTOS DE REFERÊNCIA</h3><div><p>GÊNESIS 5 — 21. E viveu Enoque sessenta e cinco anos; e gerou a Matusalém. 22. E andou Enoque com Deus, depois que gerou a Matusalém, trezentos anos; e gerou filhos e filhas. 23. E foram todos os dias de Enoque trezentos e sessenta e cinco anos. 24. E andou Enoque com Deus; e não se viu mais, porquanto Deus para si o tomou.</p></div></section><section class="info-card"><h3>MOTIVO DE ORAÇÃO</h3><div><p>Ore para permanecermos fiéis a Deus até a volta de Cristo.</p></div></section><section class="info-card"><h3>ESBOÇO DA LIÇÃO</h3><div><ol><li>A escolha de Enoque</li><li>Enoque, um homem diferenciado</li><li>Lições de vida de Enoque</li></ol></div></section><section class="info-card"><h3>LEITURAS COMPLEMENTARES</h3><div><div class="reading-grid"><div><strong>Segunda</strong><span>Dt 29.29 — Deus revela o necessário ao Seu povo.</span></div><div><strong>Terça</strong><span>Mt 25.10 — É preciso estar preparado para a vinda do Senhor.</span></div><div><strong>Quarta</strong><span>Ml 3.18 — Deus distingue os justos dos ímpios.</span></div><div><strong>Quinta</strong><span>Ef 6.6 — Sirva a Deus com sinceridade de coração.</span></div><div><strong>Sexta</strong><span>Rm 8.8 — A vida segundo a carne não agrada a Deus.</span></div><div><strong>Sábado</strong><span>Dn 12.2 — Haverá ressurreição: uns para a vida, e outros para a condenação.</span></div></div></div></section><section class="info-card"><h3>HINOS SUGERIDOS</h3><div><p>157, 206, 623</p></div></section>
