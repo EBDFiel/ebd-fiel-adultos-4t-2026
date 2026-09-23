@@ -540,6 +540,68 @@ body.print-single img{max-width:100%!important}
   .lesson-action.pdf-auto:focus-visible {outline:3px solid #c79943;outline-offset:3px;}
 }
 </style>
+
+<style id="ebd-opcoes-pdf-rodape-2026">
+/* Ações de impressão e download ao final de cada lição. Não alteram os PDFs existentes. */
+@media screen {
+  .lesson-pdf-footer {
+    margin: 26px 0 18px;
+    padding: 20px;
+    background: linear-gradient(135deg, #fbf4e7, #fffdf8);
+    border: 1px solid #e0cba6;
+    border-top: 4px solid #c79943;
+    border-radius: 15px;
+  }
+  .lesson-pdf-footer h3 {
+    margin: 0 0 6px;
+    color: #592b3c;
+    font-size: 1.15rem;
+  }
+  .lesson-pdf-footer p {
+    margin: 0 0 14px;
+    color: #655963;
+    font-size: .94rem;
+  }
+  .lesson-pdf-footer .lesson-pdf-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .lesson-pdf-footer .lesson-pdf-options > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    min-height: 48px;
+    padding: 10px 13px;
+    border-radius: 10px;
+    border: 1px solid #d7b777;
+    font-size: .93rem;
+    font-weight: 750;
+    line-height: 1.3;
+    cursor: pointer;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  .lesson-pdf-footer .pdf-print { background: #592b3c; color: #fff; border-color: #592b3c; }
+  .lesson-pdf-footer .pdf-a4 { background: #fff; color: #592b3c; }
+  .lesson-pdf-footer .pdf-mobile { background: #eaf5ef; color: #275d46; border-color: #a4ccb2; }
+  .lesson-pdf-footer .pdf-auto { background: #eed09a; color: #442438; }
+  .lesson-pdf-footer .pdf-auto { gap: 8px; }
+  .lesson-pdf-footer .pdf-auto svg { width: 18px; height: 18px; flex: 0 0 18px; }
+  .lesson-pdf-footer .lesson-pdf-options > *:hover { filter: brightness(.96); }
+  .lesson-pdf-footer .lesson-pdf-options > *:focus-visible { outline: 3px solid #c79943; outline-offset: 3px; }
+}
+@media screen and (max-width:620px) {
+  .lesson-pdf-footer { margin: 23px 0 14px; padding: 16px 13px; }
+  .lesson-pdf-footer .lesson-pdf-options { grid-template-columns: minmax(0,1fr); }
+  .lesson-pdf-footer .lesson-pdf-options > * { min-height: 52px; }
+}
+@media print {
+  .lesson-pdf-footer { display: none !important; }
+}
+</style>
 </head>
 <body id="topo">
 <button aria-controls="sidebar" aria-expanded="false" class="menu">☰ Índice</button>
@@ -619,7 +681,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-01-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-01-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-01-adultos-4t-2026.pdf" download="licao-01-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 1 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-01-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 1" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -708,6 +769,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>O conhecimento das coisas futuras deve produzir uma fé prática e responsável. A Igreja não foi chamada à especulação, mas à sobriedade, à firmeza e ao serviço cristão (1Ts 5.4-8; 1Co 15.58). Sustentados pelas promessas de Deus, prosseguimos com confiança, aguardando a plena manifestação da nossa redenção (Lc 21.28; Fp 3.20,21).</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 1">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 1">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-01-adultos-4t-2026.pdf" download="licao-01-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 1">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-01-adultos-4t-2026.pdf" download="licao-01-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 1">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-01-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-01-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-01-adultos-4t-2026.pdf" download="licao-01-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 1 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao2">Próxima lição →</a>
 </div>
 </article>
@@ -724,7 +795,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-02-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-02-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-02-adultos-4t-2026.pdf" download="licao-02-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 2 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-02-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 2" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -811,6 +881,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>Enoque demonstrou que é possível permanecer fiel a Deus mesmo em uma geração corrompida. Seu exemplo nos ensina a viver pela fé, cultivar comunhão com o Senhor e buscar agradá-Lo diariamente (Gn 5.24; Hb 11.5,6). Para isso, dependemos da Palavra e da ação do Espírito Santo enquanto aguardamos a volta de Cristo (Gl 5.16,25; Tt 2.12,13).</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 2">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 2">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-02-adultos-4t-2026.pdf" download="licao-02-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 2">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-02-adultos-4t-2026.pdf" download="licao-02-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 2">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-02-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-02-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-02-adultos-4t-2026.pdf" download="licao-02-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 2 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao3">Próxima lição →</a>
 </div>
 </article>
@@ -827,7 +907,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-03-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-03-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-03-adultos-4t-2026.pdf" download="licao-03-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 3 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-03-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 3" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -914,6 +993,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>As profecias de Daniel não foram dadas para alimentar curiosidades, mas para fortalecer a fidelidade do povo de Deus. Diante das mudanças da história, devemos permanecer em oração, obediência e perseverança, confiando que o Senhor cumprirá tudo o que revelou (Dn 9.2,3; 12.13). Assim, permanecemos preparados e firmados na segurança que temos em Cristo.</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 3">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 3">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-03-adultos-4t-2026.pdf" download="licao-03-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 3">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-03-adultos-4t-2026.pdf" download="licao-03-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 3">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-03-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-03-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-03-adultos-4t-2026.pdf" download="licao-03-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 3 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao4">Próxima lição →</a>
 </div>
 </article>
@@ -930,7 +1019,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-04-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-04-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-04-adultos-4t-2026.pdf" download="licao-04-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 4 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-04-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 4" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1017,6 +1105,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>A volta de Cristo é certa e acontecerá no tempo determinado por Deus. Por isso, a Igreja deve permanecer vigilante, firme na verdade e preparada para encontrar o Senhor. Os que permanecem em Cristo, guardando a fé e Sua Palavra, estarão preparados para o encontro com o Noivo (Mt 25.13; Jo 15.4; Ap 19.7-9).</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 4">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 4">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-04-adultos-4t-2026.pdf" download="licao-04-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 4">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-04-adultos-4t-2026.pdf" download="licao-04-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 4">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-04-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-04-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-04-adultos-4t-2026.pdf" download="licao-04-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 4 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao5">Próxima lição →</a>
 </div>
 </article>
@@ -1033,7 +1131,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-05-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-05-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-05-adultos-4t-2026.pdf" download="licao-05-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 5 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-05-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 5" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1120,6 +1217,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>Em Cristo, temos a esperança da ressurreição e da Vida Eterna. Por isso, devemos permanecer firmes na Palavra de Deus, confiantes em Suas promessas e preparados para a Eternidade. Essa certeza fortalece a nossa fé, nos encoraja a perseverar até o fim (Jo 11.25,26; 1Ts 4.16,17), nos sustenta em meio às lutas, consola o nosso coração diante da realidade da morte e nos lembra de que a nossa jornada não termina aqui. Em Cristo, a morte perde seu poder, a Eternidade se torna nossa herança e cada passo nesta vida nos direciona ao pleno cumprimento da promessa divina.</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 5">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 5">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-05-adultos-4t-2026.pdf" download="licao-05-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 5">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-05-adultos-4t-2026.pdf" download="licao-05-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 5">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-05-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-05-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-05-adultos-4t-2026.pdf" download="licao-05-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 5 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao6">Próxima lição →</a>
 </div>
 </article>
@@ -1136,7 +1243,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-06-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-06-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-06-adultos-4t-2026.pdf" download="licao-06-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 6 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-06-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 6" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1225,6 +1331,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>A volta de Cristo revela que a história caminha para o triunfo definitivo do Senhor. No Arrebatamento, a Igreja será reunida com Ele; na Manifestação Gloriosa, Sua autoridade será publicamente reconhecida, o mal será vencido e o Reino messiânico será estabelecido. Essa certeza deve manter nossa confiança na fidelidade de Deus e nosso compromisso com a missão recebida (1Ts 4.16,17; Ap 19.11-16).</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 6">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 6">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-06-adultos-4t-2026.pdf" download="licao-06-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 6">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-06-adultos-4t-2026.pdf" download="licao-06-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 6">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-06-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-06-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-06-adultos-4t-2026.pdf" download="licao-06-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 6 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao7">Próxima lição →</a>
 </div>
 </article>
@@ -1241,7 +1357,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-07-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-07-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-07-adultos-4t-2026.pdf" download="licao-07-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 7 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-07-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 7" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1328,6 +1443,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>A Ressurreição de Cristo é o fundamento da fé cristã e a garantia da vitória dos salvos sobre a morte (1Co 15.20-22). Todos ressuscitarão segundo a ordem de Deus: uns para a vida e outros para o juízo (Jo 5.28,29; Ap 20.4-6,11-15). Por isso, devemos permanecer firmes em Cristo, vivendo em Santidade e aguardando a Sua volta (1Ts 4.16,17; Fp 3.20,21).</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 7">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 7">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-07-adultos-4t-2026.pdf" download="licao-07-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 7">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-07-adultos-4t-2026.pdf" download="licao-07-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 7">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-07-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-07-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-07-adultos-4t-2026.pdf" download="licao-07-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 7 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao8">Próxima lição →</a>
 </div>
 </article>
@@ -1343,7 +1468,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-08-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-08-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-08-adultos-4t-2026.pdf" download="licao-08-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 8 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-08-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 8" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1430,6 +1554,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>O Arrebatamento confirma a fidelidade de Cristo à promessa de receber Sua Igreja (Jo 14.1-3). Ao toque da trombeta de Deus, os mortos em Cristo ressuscitarão, os salvos vivos serão transformados, e todos estarão para sempre com o Senhor (1Ts 4.16,17; 1Co 15.51-54). Enquanto aguarda a redenção do corpo, a Igreja foi selada com o Espírito Santo, o penhor de sua herança (Ef 1.13,14). O mesmo Espírito que ressuscitou Jesus habita nos salvos e vivificará seus corpos mortais (Rm 8.11,23). Por isso, a esperança do arrebatamento é profundamente pentecostal: o Espírito sustenta a perseverança, distribui dons para o serviço e impulsiona o testemunho até a volta de Cristo (At 1.8; 1Co 12.4-7; Ap 22.17).</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 8">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 8">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-08-adultos-4t-2026.pdf" download="licao-08-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 8">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-08-adultos-4t-2026.pdf" download="licao-08-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 8">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-08-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-08-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-08-adultos-4t-2026.pdf" download="licao-08-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 8 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao9">Próxima lição →</a>
 </div>
 </article>
@@ -1446,7 +1580,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-09-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-09-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-09-adultos-4t-2026.pdf" download="licao-09-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 9 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-09-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 9" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1533,6 +1666,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>A Grande Tribulação revelará a gravidade da rebelião humana, a limitação do poder do Anticristo e a justiça dos juízos divinos. A Igreja, porém, aguarda o livramento prometido por Cristo. Conhecer essas verdades deve aumentar nosso senso de responsabilidade, levando-nos a anunciar a Salvação enquanto há oportunidade e a confiar no triunfo definitivo do Senhor (1Ts 1.10; 2Ts 2.8; Ap 19.19,20).</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 9">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 9">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-09-adultos-4t-2026.pdf" download="licao-09-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 9">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-09-adultos-4t-2026.pdf" download="licao-09-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 9">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-09-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-09-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-09-adultos-4t-2026.pdf" download="licao-09-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 9 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao10">Próxima lição →</a>
 </div>
 </article>
@@ -1549,7 +1692,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-10-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-10-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-10-adultos-4t-2026.pdf" download="licao-10-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 10 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-10-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 10" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1636,6 +1778,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>O Tribunal de Cristo lembra que a vida cristã possui responsabilidade e valor eterno. O Senhor conhece cada obra, cada motivação e cada serviço realizado em Seu nome. As Bodas do Cordeiro, por sua vez, revelam o destino glorioso da Igreja: estar plenamente unida a Cristo e participar de Sua alegria. Essas verdades nos ensinam a servir com sinceridade e a viver conscientes de que nossa fidelidade não será esquecida por Deus (1Co 3.13-15; Hb 6.10; Ap 19.7-9).</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 10">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 10">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-10-adultos-4t-2026.pdf" download="licao-10-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 10">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-10-adultos-4t-2026.pdf" download="licao-10-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 10">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-10-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-10-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-10-adultos-4t-2026.pdf" download="licao-10-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 10 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao11">Próxima lição →</a>
 </div>
 </article>
@@ -1652,7 +1804,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-11-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-11-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-11-adultos-4t-2026.pdf" download="licao-11-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 11 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-11-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 11" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1737,6 +1888,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>O Milênio manifestará publicamente o governo de Jesus Cristo sobre a Terra. Os santos glorificados reinarão com Ele, Satanás permanecerá impedido de enganar as nações, e os povos viverão sob a autoridade do Messias. Esse período confirmará a fidelidade de Deus às promessas relacionadas ao Reino e demonstrará que somente o governo de Cristo pode produzir verdadeira justiça, segurança e paz (Is 11.1-9; Zc 14.9; Ap 20.1-6).</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 11">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 11">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-11-adultos-4t-2026.pdf" download="licao-11-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 11">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-11-adultos-4t-2026.pdf" download="licao-11-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 11">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-11-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-11-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-11-adultos-4t-2026.pdf" download="licao-11-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 11 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao12">Próxima lição →</a>
 </div>
 </article>
@@ -1753,7 +1914,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-12-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-12-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-12-adultos-4t-2026.pdf" download="licao-12-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 12 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-12-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 12" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1840,6 +2000,16 @@ body.print-single img{max-width:100%!important}
 
 <div class="conclusion"><h3>Conclusão</h3><p>O Juízo Final confirmará que Deus conduziu a História com perfeita retidão. Nenhuma injustiça ficará sem resposta, nenhum pecado permanecerá oculto e nenhum poder contrário ao Senhor continuará atuando (Ec 12.14; Ap 20.10-15). A derrota de Satanás e da morte abrirá caminho para o estado eterno, no qual os redimidos desfrutarão para sempre da Presença de Deus (1Co 15.26; Ap 21.1-4). Diante dessa certeza, devemos reconhecer o valor eterno das escolhas presentes e permanecer firmados na Salvação oferecida por Cristo.</p></div>
 </section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 12">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 12">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-12-adultos-4t-2026.pdf" download="licao-12-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 12">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-12-adultos-4t-2026.pdf" download="licao-12-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 12">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-12-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-12-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-12-adultos-4t-2026.pdf" download="licao-12-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 12 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
+</section>
 <a class="next" href="#licao13">Próxima lição →</a>
 </div>
 </article>
@@ -1856,7 +2026,6 @@ body.print-single img{max-width:100%!important}
 <div aria-label="Ações da lição" class="lesson-actions">
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
-<a class="lesson-action print pdf-auto" href="pdf/a4/licao-13-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-13-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-13-adultos-4t-2026.pdf" download="licao-13-adultos-4t-2026.pdf" aria-label="Baixar PDF da Lição 13 — formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar lição em PDF</span></a>
 <a class="lesson-action support" href="apoios/apoio-pedagogico-licao-13-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 13" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
@@ -1942,6 +2111,16 @@ body.print-single img{max-width:100%!important}
 <aside class="taught"><strong>Eu ensinei que</strong><p>Devemos permanecer na Palavra, guardar a fé e conservar com fidelidade aquilo que recebemos de Cristo.</p></aside>
 
 <div class="conclusion"><h3>Conclusão</h3><p>A volta de Cristo deve ser aguardada com responsabilidade, e não com passividade. Enquanto o Senhor não vem, administramos aquilo que Ele nos confiou, testemunhamos pelo poder do Espírito Santo e permanecemos firmados em Sua Palavra (Mt 25.14-23; At 1.8; 2Tm 3.14-17). A fidelidade cristã se manifesta nas escolhas diárias, no serviço e na perseverança. Bem-aventurado será o servo que, quando o Senhor vier, for encontrado cumprindo a missão recebida (Mt 24.45,46).</p></div>
+</section>
+<section class="lesson-pdf-footer" aria-label="Impressão e downloads em PDF da lição 13">
+<h3>Imprimir ou salvar a lição em PDF</h3>
+<p>Escolha o formato desejado. A opção automática identifica a tela do dispositivo.</p>
+<div class="lesson-pdf-options">
+<button class="pdf-print" type="button" data-action="print-lesson" aria-label="Imprimir ou salvar em PDF A4 a lição 13">🖨️ Imprimir / Salvar A4</button>
+<a class="pdf-a4" href="pdf/a4/licao-13-adultos-4t-2026.pdf" download="licao-13-adultos-4t-2026-a4.pdf" aria-label="Baixar PDF A4 da lição 13">↓ Baixar PDF A4</a>
+<a class="pdf-mobile" href="pdf/mobile/licao-13-adultos-4t-2026.pdf" download="licao-13-adultos-4t-2026-mobile.pdf" aria-label="Baixar PDF otimizado para celular da lição 13">📱 Baixar PDF para celular</a>
+<a class="pdf-auto" href="pdf/a4/licao-13-adultos-4t-2026.pdf" data-pdf-a4="pdf/a4/licao-13-adultos-4t-2026.pdf" data-pdf-mobile="pdf/mobile/licao-13-adultos-4t-2026.pdf" download="licao-13-adultos-4t-2026.pdf" aria-label="Baixar PDF da lição 13 no formato automático"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v4h16v-4"/></svg><span>Baixar PDF automático</span></a>
+</div>
 </section>
 <a class="next" href="#inicio">Voltar ao início ↑</a>
 </div>
