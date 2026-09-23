@@ -336,6 +336,203 @@ body.print-single img{max-width:100%!important}
   }
 }
 </style>
+
+<style id="ebd-4t-identidade-vinho-2026">
+/* Identidade exclusiva da página de leitura do 4º trimestre.
+   Restrita à tela: a impressão A4 permanece com a formatação anterior. */
+@media screen {
+  :root {
+    --navy: #592b3c;
+    --navy2: #713b4f;
+    --gold: #c79943;
+    --cream: #f7f1e7;
+    --paper: #ffffff;
+    --ink: #30292c;
+    --muted: #746971;
+    --line: #e4d8c7;
+    --green: #386b56;
+    --shadow: 0 16px 40px rgba(74, 35, 50, .10);
+    --sidebar: 306px;
+  }
+  body {
+    background: linear-gradient(135deg, #f5ecdf 0%, #fbf8f2 46%, #f7f0e7 100%);
+    color: var(--ink);
+  }
+  .sidebar {
+    background:
+      radial-gradient(circle at 100% 0%, rgba(230, 191, 114, .13), transparent 38%),
+      linear-gradient(175deg, #592b3c 0%, #3d1b2b 100%);
+    border-right: 3px solid #c79943;
+  }
+  .brand {
+    border-bottom-color: rgba(245, 215, 164, .3);
+    padding-bottom: 23px;
+  }
+  .brand small, .nav-title { color: #f4d99d; }
+  .brand h1 { color: #fff8ee; }
+  .brand p { color: #e6cdd5; }
+  .search input {
+    background: rgba(255,255,255,.10);
+    border-color: rgba(247, 217, 172, .36);
+    color: #fff;
+  }
+  .search input::placeholder { color: #e2cbd0; }
+  .search input:focus {
+    outline: 2px solid #e2bc72;
+    outline-offset: 2px;
+    background: rgba(255,255,255,.14);
+  }
+  .nav { gap: 7px; }
+  .nav a {
+    grid-template-columns: 35px minmax(0,1fr);
+    align-items: start;
+    border-radius: 11px;
+    padding: 10px 9px;
+    color: #f4e7eb;
+  }
+  .nav a span {
+    display: grid;
+    place-items: center;
+    width: 31px;
+    min-height: 31px;
+    border: 1px solid rgba(237, 201, 141, .4);
+    border-radius: 8px;
+    background: rgba(250, 220, 162, .10);
+    color: #f7da9b;
+    font-size: .76rem;
+  }
+  .nav a:hover, .nav a.active {
+    background: rgba(249, 225, 182, .15);
+    border-color: rgba(241, 198, 121, .55);
+    color: #fff;
+  }
+  .nav a.active { box-shadow: inset 3px 0 0 #e7bd73; }
+  .nav a.active span { color: #3e1c2b; background: #ecc985; border-color: #ecc985; }
+
+  .main { padding-top: 31px; }
+  .intro {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 95% 10%, rgba(245, 209, 146, .18), transparent 38%),
+      linear-gradient(120deg, #592b3c 0%, #743e51 60%, #874d55 100%);
+    border: 1px solid #8c5a5d;
+    border-top: 5px solid #d8aa59;
+    box-shadow: 0 18px 42px rgba(65, 27, 42, .18);
+    padding: 35px 39px 38px;
+  }
+  .intro::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: -42px;
+    width: 225px;
+    height: 225px;
+    border: 1px solid rgba(250, 222, 177, .20);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .intro > div:first-child { color: #ffdfaa !important; }
+  .intro h1 { color: #fff9ed; letter-spacing: -.025em; }
+  .intro p { color: #f1dfe3; }
+  .intro .badges span {
+    background: rgba(255, 255, 255, .10);
+    border-color: rgba(253, 223, 173, .36);
+    color: #fff8ed;
+  }
+
+  .lesson { margin-bottom: 58px; }
+  .lesson .hero.hero-official {
+    border-radius: 20px 20px 0 0;
+    border: 1px solid #ddc69e;
+    border-bottom: 0;
+  }
+  .shell {
+    border-radius: 0 0 20px 20px;
+    border-color: #e1d0ba;
+    border-top: 4px solid #c79943;
+    background: #fffefd;
+    padding-top: 27px;
+  }
+  .lesson-actions {
+    background: linear-gradient(110deg, #fbf4e7, #fffdfa);
+    border-color: #e6d5bb;
+    border-left: 4px solid #c79943;
+    border-radius: 13px;
+    margin-bottom: 27px;
+  }
+  .lesson-actions-label { color: #65384a; }
+  .lesson-action.print {
+    background: #592b3c;
+    border-color: #592b3c;
+    color: #fff;
+  }
+  .lesson-action.print:hover { background: #713b4f; }
+  .lesson-action.copy {
+    background: #eaf5ee;
+    border-color: #c4dccc;
+    color: #285740;
+  }
+  .lesson-action.support {
+    background: #eed09a;
+    border-color: #d5a759;
+    color: #442438;
+    box-shadow: 0 3px 8px rgba(118, 72, 39, .09);
+  }
+  .lesson-action.support:hover {
+    background: #f6dea9;
+    box-shadow: 0 7px 17px rgba(118, 72, 39, .19);
+  }
+  .card {
+    background: #fffdf9;
+    border-color: #e7dccc;
+    border-radius: 13px;
+  }
+  .card h3 { color: #633345; }
+  .key.aureo { background: #fff9ea; }
+  .key.aureo strong { color: #825719; }
+  .key.verdade { background: #eff7f1; }
+  .details { border-color: #e7d9c6; }
+  .details summary {
+    background: #f8f0e5;
+    color: #633345;
+  }
+  .readings li { background: #fffefa; }
+  .page-tag { color: #9c6e27; }
+  .reading h3 { color: #592b3c; border-bottom-color: #d7ad69; }
+  .reading h4 { color: #865128; }
+  .introduction {
+    background: #faf0f3;
+    border-left-color: #713b4f;
+  }
+  .comment {
+    background: #f8f2f4;
+    border-left-color: #a17687;
+  }
+  .comment strong { color: #713b4f; }
+  .focus { background: #fff6df; }
+  .taught { background: #eef7f0; }
+  .conclusion { background: linear-gradient(135deg, #592b3c, #743e51); }
+  .point { background: #f8ecd4; }
+  .next { background: #592b3c; color: #fff; }
+  .next:hover { background: #713b4f; }
+  .menu { background: #592b3c; }
+  .top { background: #c79943; color: #3b2130; }
+  .top:hover { background: #e2b866; }
+  @media (max-width: 980px) {
+    .main { padding-top: 70px; }
+    .intro { padding: 27px 22px; }
+    .shell { padding-top: 20px; }
+  }
+  @media (max-width: 620px) {
+    .intro { padding: 25px 18px; border-radius: 19px; }
+    .intro h1 { font-size: clamp(2rem, 10vw, 2.75rem); }
+    .lesson-actions { border-left-width: 3px; }
+    .lesson .hero.hero-official { border-radius: 16px 16px 0 0; }
+    .shell { border-radius: 0 0 16px 16px; }
+  }
+}
+</style>
 </head>
 <body id="topo">
 <button aria-controls="sidebar" aria-expanded="false" class="menu">☰ Índice</button>
@@ -416,7 +613,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-01-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 1">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-01-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 1" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -521,7 +718,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-02-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 2">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-02-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 2" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -624,7 +821,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-03-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 3">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-03-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 3" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -727,7 +924,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-04-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 4">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-04-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 4" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -830,7 +1027,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-05-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 5">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-05-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 5" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -933,7 +1130,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-06-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 6">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-06-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 6" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -1038,7 +1235,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-07-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 7">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-07-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 7" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -1140,7 +1337,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-08-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 8">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-08-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 8" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -1243,7 +1440,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-09-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 9">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-09-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 9" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -1346,7 +1543,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-10-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 10">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-10-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 10" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -1449,7 +1646,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-11-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 11">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-11-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 11" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -1550,7 +1747,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-12-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 12">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-12-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 12" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
@@ -1653,7 +1850,7 @@ body.print-single img{max-width:100%!important}
 <span class="lesson-actions-label">Ações desta lição</span>
 <button class="lesson-action copy" data-action="copy-lesson" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="11" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Copiar lição inteira</span></button>
 <button class="lesson-action print" data-action="print-lesson" title="Abrir impressão otimizada para folha A4" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect height="8" width="12" x="6" y="14"></rect></svg><span>Salvar / imprimir em A4</span></button>
-<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-13-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 13">📖 Apoio Pedagógico</a>
+<a class="lesson-action support" href="apoios/apoio-pedagogico-licao-13-adultos.html" aria-label="Abrir o Apoio Pedagógico da Lição 13" target="_blank" rel="noopener noreferrer">📖 Apoio Pedagógico</a>
 </div>
 
 <section class="key-grid">
